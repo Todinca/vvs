@@ -16,9 +16,11 @@
 <div class="col-lg-offset-2 col-lg-8">
     <!-- Get all bookings or only affordable ones -->
     <div class="btn-group" role="group">
-        <button ng-click="vm.getAll()" type="button" class="btn btn-default">All</button>
-        <button ng-click="vm.getAffordable()" type="button" class="btn btn-default">Less than</button>
-        <input type="text" class="btn btn-default" th:id="affordablePrice"/>
+        <button  id="all_button" ng-click="vm.getAll()" type="button" class="btn btn-default">All</button>
+        <button  id="less_button" ng-click="vm.getAffordable()" type="button" class="btn btn-default">Less than</button>
+        <label>
+            <input type="text" class="btn btn-default" th:id="affordablePrice"/>
+        </label>
     </div>
     <table class="table">
         <thread>
@@ -40,9 +42,8 @@
             <td>{{product.nrOfProd}}</td>
             <td>{{product.priceProduct}}</td>
 
-
             <td>
-                <button class="btn btn-danger" ng-click="vm.deleteProducts(product.id)">Delete</button>
+                <button id="delete_button" class="btn btn-danger" ng-click="vm.deleteProducts(product.id)">Delete</button>
             </td>
 
         </tr>

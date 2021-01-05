@@ -36,12 +36,15 @@
 
         }
         function deleteProducts(id){
+            var url="/delete/"+id;
+            $http.delete(url).then(function(response){
+                vm.products = response.data;
 
-            var url="/delete/" + id;
-            $http.post(url).then(function(response){
-                vm.products=response.data;
             });
+
         }
-    }
+
+        }
+
 
 })();

@@ -1,0 +1,5 @@
+-Imports-unused import : m a ajutat sa gasesc toate importurile declarate pe care nu le am folosit
+-unused CSS selector :bootstrap.css-2382
+-missing comma : bootstrap.css nu era pusa virgula
+-Java language level migration aids :JAVA 7: explicit type can be replaced with <> :-> am inlocuit o lista cu <>
+-Proofreading: m a ajutat sa salvez in dictionar si inainte in cod era subliniat

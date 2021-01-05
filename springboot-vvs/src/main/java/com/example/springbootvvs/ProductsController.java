@@ -3,9 +3,7 @@ package com.example.springbootvvs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 /*@RequestMapping(value="/products")*/
@@ -35,7 +33,7 @@ public class ProductsController {
    return productsRepository.findAll();}*/
 
 
-    @RequestMapping(value = "/delete/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.DELETE)
     public List<MakeupProducts> deleteProducts(@PathVariable Long id){
         productsRepository.deleteById(id);
         return productsRepository.findAll();}

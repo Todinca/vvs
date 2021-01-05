@@ -1,7 +1,5 @@
 package com.example.springbootvvs;
 
-import net.bytebuddy.implementation.bytecode.constant.NullConstant;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
